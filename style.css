@@ -1,0 +1,58 @@
+/* RESPONSIVE STYLES */
+
+/* Barcha elementlar moslashishi uchun asosiy stil */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Yurak moslashuvchan bo'lishi uchun */
+.heart {
+  width: 40vw;
+  max-width: 260px;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Matnlar kichik ekranlarda ham o‘qiladigan bo‘lsin */
+.title, .glow-text {
+  font-size: 5vw;
+  text-align: center;
+  width: 100%;
+}
+
+/* Emoji yurakchalar (romantik versiyada) */
+.floating-hearts span {
+  font-size: 4vw;
+}
+
+/* Kichik ekranlar (mobil telefonlar) uchun qo‘shimcha sozlash */
+@media (max-width: 480px) {
+  .title, .glow-text {
+    font-size: 6vw;
+  }
+
+  .heart {
+    width: 60vw;
+  }
+
+  .floating-hearts span {
+    font-size: 6vw;
+  }
+}
+
+/* Katta ekranlar (monitorlar) uchun maksimal cheklov */
+@media (min-width: 1200px) {
+  .heart {
+    max-width: 280px;
+  }
+
+  .title, .glow-text {
+    font-size: 2rem;
+  }
+}
